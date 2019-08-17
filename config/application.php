@@ -95,6 +95,21 @@ Config::define('DISALLOW_FILE_EDIT', true);
 Config::define('DISALLOW_FILE_MODS', true);
 
 /**
+ * Mailgun Settings
+ *
+ * Only set this if there's an API key env var; otherwise they'll disable the ability to
+ * manually configure the plugin, which we *may* want to do.
+ */
+if (env('MAILGUN_APIKEY')) {
+    Config::define('MAILGUN_APIKEY', env('MAILGUN_APIKEY'));
+    Config::define('MAILGUN_REGION', env('MAILGUN_REGION') ?: 'us'); // Default to US region, but allow override
+    Config::define('MAILGUN_USEAPI', env(1)); // We have an API key, so we're using it
+    Config::define('MAILGUN_DOMAIN', env('MAILGUN_DOMAIN'));
+    Config::define('MAILGUN_FROM_NAME', env('MAILGUN_FROM_NAME'));
+    Config::define('MAILGUN_FROM_ADDRESS', env('MAILGUN_FROM_ADDRESS'));
+}
+
+/**
  * Debugging Settings
  */
 Config::define('WP_DEBUG_DISPLAY', false);
