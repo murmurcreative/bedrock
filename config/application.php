@@ -110,6 +110,13 @@ if (env('MAILGUN_APIKEY')) {
 }
 
 /**
+ * Sentry Settings
+ */
+Config::define('WP_SENTRY_ENV', env('WP_ENV') ?: 'development');
+Config::define('WP_SENTRY_DSN', env('WP_SENTRY_DSN'));
+Config::define('WP_SENTRY_PUBLIC_DSN', env('WP_SENTRY_DSN_PUBLIC'));
+
+/**
  * Debugging Settings
  */
 Config::define('WP_DEBUG_DISPLAY', false);
