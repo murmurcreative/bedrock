@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f250cae8ffb92ce4373f125aa63bca18",
+    "content-hash": "3a9158b94c0862b345739b2bbac6dcdb",
     "packages": [
         {
             "name": "composer/installers",
@@ -598,6 +598,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/mailgun/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-sentry-integration",
+            "version": "2.8.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-sentry-integration/",
+                "reference": "tags/2.8.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-sentry-integration.2.8.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-sentry-integration/"
         }
     ],
     "packages-dev": [
