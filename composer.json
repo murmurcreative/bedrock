@@ -29,6 +29,10 @@
       "url": "https://wpackagist.org"
     },
     {
+      "type": "composer",
+      "url": "https://composer.deliciousbrains.com"
+    },
+    {
       "type": "package",
       "package": {
         "name": "kinsta/kinsta-mu-plugins",
