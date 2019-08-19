@@ -27,6 +27,18 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "kinsta/kinsta-mu-plugins",
+        "type": "wordpress-muplugin",
+        "version": "2.0.15",
+        "dist": {
+          "url": "https://kinsta.com/kinsta-tools/kinsta-mu-plugins.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
@@ -37,6 +49,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "vlucas/phpdotenv": "^3.4.0",
+    "kinsta/kinsta-mu-plugins": "2.0.15",
     "wpackagist-plugin/mailgun": "^1.7",
     "wpackagist-plugin/wp-sentry-integration": "^2.8"
   },
