@@ -110,6 +110,11 @@ if (env('MAILGUN_APIKEY')) {
 }
 
 /**
+ * Gravity Forms Settings
+ */
+Config::define('GF_LICENSE_KEY', env('GF_LICENSE_KEY'));
+
+/**
  * Sentry Settings
  */
 Config::define('WP_SENTRY_ENV', env('WP_ENV') ?: 'development');
