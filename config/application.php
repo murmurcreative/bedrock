@@ -110,6 +110,11 @@ if (env('MAILGUN_APIKEY')) {
 }
 
 /**
+ * ACF Settings
+ */
+Config::define('ACF_PRO_LICENSE', env('ACF_PRO_LICENSE'));
+
+/**
  * Sentry Settings
  */
 Config::define('WP_SENTRY_ENV', env('WP_ENV') ?: 'development');
