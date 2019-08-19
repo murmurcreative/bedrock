@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a9158b94c0862b345739b2bbac6dcdb",
+    "content-hash": "8050cbf951a199f4bf074cb5109e560d",
     "packages": [
         {
             "name": "composer/installers",
@@ -142,6 +142,15 @@
                 }
             ],
             "time": "2020-04-07T06:57:05+00:00"
+        },
+        {
+            "name": "kinsta/kinsta-mu-plugins",
+            "version": "2.0.15",
+            "dist": {
+                "type": "zip",
+                "url": "https://kinsta.com/kinsta-tools/kinsta-mu-plugins.zip"
+            },
+            "type": "wordpress-muplugin"
         },
         {
             "name": "oscarotero/env",
